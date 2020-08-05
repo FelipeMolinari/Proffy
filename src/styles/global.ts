@@ -10,7 +10,7 @@ export default createGlobalStyle`
  	--color-primary: #6ec987;
  	--color-primary-dark: #298642;
  	--color-primary-darker: #11812f;
- 	--color-secundary: #8257e5;
+ 	--color-secundary: #7F86CB;
  	--color-secundary-dark: #774dd6;
  	--color-text-in-primary: #d4c2ff;
  	--color-text-title: #32264d;
@@ -37,7 +37,6 @@ body,
 
 body {
 	background: ${props=>props.theme.colors.background};
-	transition: background-color 0.2s ease;
 }
 
 #root {
@@ -57,8 +56,11 @@ a{
 }
 
 .container {
-	width: 90%;
-	max-width: 700px;
+	width: 80%;
+	max-width: 900px;
+	align-items:center;
+	justify-content:center;
+	display:flex;
 }
 
 @media (min-width: 700px) {
@@ -66,8 +68,5 @@ a{
 		font-size: 62.5%;
 	}
 }
-.logo-main{
-  font: 9rem Lobster;
 
-}
 `;

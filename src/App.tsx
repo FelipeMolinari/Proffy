@@ -1,8 +1,7 @@
 import React,{useState} from 'react';
 import {ThemeProvider} from 'styled-components'
+import Routes from './routes'
 import GlobalSyles from './styles/global'
-import Landing from './Pages/Landing'
-import Header from './Components/Header'
 import light from './styles/theme/light';
 import dark from './styles/theme/dark';
 
@@ -13,11 +12,8 @@ function App() {
 	}
 	return (
 			<ThemeProvider theme={theme}>
-				<div className="App">
 					<GlobalSyles/>
-					<Header {...{toggleTheme}}/>
-					<Landing/>
-				</div>
+					<Routes {...{toggleTheme}}/>
 			</ThemeProvider>
 	);
 }

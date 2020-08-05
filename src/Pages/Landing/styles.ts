@@ -1,16 +1,66 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+
 export const LandingContent = styled("div")`
 width: 100vh;
-height: 100vh;
+width: 100vw;
 display: flex;
 justify-content: center;
 align-items:center;
+@media (min-width:  700px){
+		#grid-container{
+      max-width: 1100px;
+      display: grid;
+      grid-template-rows: 1fr 1fr ;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+      "logo image" 
+      "buttons image";
+
+
+      .prof-image{
+      justify-self:center;
+      align-items:center;
+      grid-area: image;
+      width: 85%;
+      margin-bottom: 5rem;
+      
+    }
+  
+    .buttons-container{
+      align-self:flex-start;
+      grid-area: buttons;
+      margin-top: 2.6rem;
+      .button{
+        width: 80%;
+      }
+    }
+    .logo-container{
+      align-self:flex-end;
+      grid-area: logo;
+      margin: 0;
+      h2{
+        text-align:initial;
+      }
+      h1{
+        align-self: flex-start;
+        margin-left: 2.8rem;
+      }
+    }
+    }
+   
+}
 .home-container{
+  width: 100vw;
+  height: 100vh;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  
+
 }
+
 `;
 export const LogoConteiner = styled("div")`
 
@@ -20,26 +70,24 @@ export const LogoConteiner = styled("div")`
   flex-direction:column;
   justify-content:center;
   align-items:center;
-
   .logo-main{
-    font: 6rem Lobster;
+    font: 10rem Lobster;
     color: ${props=>props.theme.colors.title};
 
   }
   .logo-description{
     font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 4.6rem;
+    font-size: 1.8rem;
     margin-top: 3rem;
-    width: 50%;
+    width: 30rem;
     color: ${props=>props.theme.colors.subtext};
-    line-height: 2rem;
+    line-height: 2.6rem;
 
   }
 `;
 
 export const ImageIntro = styled("img")`
-  width: 60%;
+  width: 80%;
 `
 export const ButtonsContainer = styled("div")`
 display:flex;
@@ -49,7 +97,7 @@ width: 100%;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-a:first-child{
+.button:first-child{
   margin-bottom: 1rem;
 }
 .student{
@@ -67,11 +115,11 @@ a:first-child{
 transition: background-color 0.2s;
 `;
 
-export const Button = styled("a")`
-width: 35%;
-height: 4rem;
+export const Button = styled(Link)`
+width: 26rem;
+height: 4.6rem;
 border-radius: 0.8rem;
-font: 700 2.0 Archivo;
+font: 700 1.6rem Archivo;
 display: flex;
 align-items:center;
 justify-content: flex-start;
@@ -81,7 +129,7 @@ padding-right: 2rem;
 
 img{
   width: 2.5rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
   
 }
 
@@ -96,23 +144,8 @@ export const TotalConnections = styled("span")`
   img{
     margin-left: 0.8rem;  
   }
-  margin-bottom: 1.6rem;
+  margin: 1.6rem 0 ;
 
 `;
 
-export const Content = styled("div")`
-display:flex;
-align-items: center;
-justify-content:center;
-flex-direction: column-reverse;
-width: 100%;
-.buttons-connecteds{ 
-  width: 100%;
-  border: 1px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-}
-`;
 

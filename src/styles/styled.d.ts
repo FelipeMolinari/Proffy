@@ -5,9 +5,14 @@ declare module 'styled-components'{
     colors:{
       background:string,
       title: string,
+      subTitle: string,
       subtext: string,
       button: string,
-      buttonHover: string
+      buttonHover: string,
+      box: string,
+      input: string,
+      border: string,
+      paragraphText: string,
     },
     landiscape: string
 
