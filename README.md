@@ -1,29 +1,36 @@
-
 <p align="center">
-  <img width="364" src="https://github.com/FelipeMolinari/Proffy/blob/master/src/assets/Proffy.png">
+   <img src="https://github.com/FelipeMolinari/Proffy/blob/master/web/src/assets/Proffy.png" alt="Proffy" width="280"/>
+</p>
+
+<p align="center">	
+   <a href="https://www.linkedin.com/in/felipe-molinari-2548b0193/">
+      <img alt="Felioe Molinari" src="https://img.shields.io/badge/-Felipe Molinari-6EC987?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/FelipeMolinari/Proffy?color=6EC987">
+
+  <a href="https://github.com/FelipeMolinari/Proffy/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/FelipeMolinari/proffy?color=6EC987">
+  </a> 
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-6EC987">
+  <a href="https://github.com/FelipeMolinari/Proffy/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/FelipeMolinari/Proffy?color=6EC987&logo=github">
+  </a>
 </p>
 
 
-<h4 align="center">
-  Sua plataforma de ensino à distância. Aprenda com os melhores professores!
-</h4>
-
-
-
 <p align="center">
-  <a href="#rocket-tecnologias"> :rocket: Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">💻 Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-executar">🔖 Como executar</a>&nbsp;&nbsp;&nbsp;
-
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
 </p>
 
-## Web Screenshot
+<br>
+
 <p align="center">
-  <img width="364" src="https://github.com/FelipeMolinari/Proffy/blob/master/src/assets/darkMode.jpg">
-  <img width="364" src="https://github.com/FelipeMolinari/Proffy/blob/master/src/assets/lightMode.jpg">
+  <img alt="Frontend" src="http://g.recordit.co/QUe59UHQyR.gif" width="100%">
 </p>
-
-
 
 ## :rocket: Tecnologias
 
@@ -36,34 +43,25 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Proffy é uma aplicação que conecta estudantes à professores.
+Proffy é uma plataforma que conecta estudantes à professores. 
 
+## 🔖 Layout
 
-## 🔖 Como Executar
+Você pode ver o layout detalhado através do figma. [desse link](https://www.figma.com/file/HEPW1PI48RI506cOBMO8kq/Untitled?node-id=3%3A6302).
 
-#### Clonando o projeto
-```sh
-git clone https://github.com/FelipeMolinari/Proffy.git
-cd Proffy
-npm install
-```
-#### Iniciando Backend
-```sh
-cd backend
-npm start
-```
-#### Iniciando Frontend
-```sh
-cd frontend
-npm start
-```
-#### Iniciando mobile
-```sh
-cd mobile
-npm start
-```
+## 🤔 Como contribuir
 
-<hr/>
-<br/>
-<blockquote>Dê uma :star: se esse projeto te ajudou de alguma forma!</blockquote>
-<blockquote>Feito :heart: by Felipe Molinari</blockquote>
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
+
+Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
+
+Feito com ♥ by Felipe Molinari :wave:
