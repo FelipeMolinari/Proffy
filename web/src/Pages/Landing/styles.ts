@@ -104,13 +104,13 @@ flex-direction:column;
   background: ${props=>props.theme.colors.button}
 }
 .teacher{
-  background: var(--color-primary)
+  background: ${(props) => props.theme.colors.primary}
 }
 .student:hover{
   background: ${props=>props.theme.colors.buttonHover}
 }
 .teacher:hover{
-  background: var(--color-primary-lighter);
+  background: ${(props) => props.theme.colors.lighter};
 }
 transition: background-color 0.2s;
 `;

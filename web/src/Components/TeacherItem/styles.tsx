@@ -65,7 +65,7 @@ p strong{
 button{
   width: 20rem;
   height: 5.6rem;
-  background: var(--color-primary);
+  background: ${(props) => props.theme.colors.primary};
   color: ${props=>props.theme.colors.input};
   border: 0;
   border-radius: 0.8rem;
@@ -76,7 +76,7 @@ button{
   justify-content:space-evenly;
   transition: 0.2;
   &:hover{
-    background: var(--color-primary-dark)
+    background: ${(props) => props.theme.colors.lighter}
   }
 }
 `

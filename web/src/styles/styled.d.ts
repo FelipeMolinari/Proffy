@@ -13,6 +13,8 @@ declare module 'styled-components'{
       input: string,
       border: string,
       paragraphText: string,
+      primary:string,
+      lighter: string,
     },
     landiscape: string
 

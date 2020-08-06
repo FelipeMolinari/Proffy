@@ -1,5 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
-
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
@@ -36,7 +35,7 @@ body,
 }
 
 body {
-	background: ${props=>props.theme.colors.background};
+	background: ${(props) => props.theme.colors.background};
 }
 
 #root {
