@@ -16,6 +16,7 @@ export const TeacherListContent = styled('div')`
     margin: 0 auto;
     
     .main{
+
       width: 60vw;
       margin: 0 auto;
       footer{
@@ -31,6 +32,10 @@ export const TeacherListContent = styled('div')`
           margin-top:0;
         }
       }
+      .form-container{
+  padding:  0rem 2.6rem;
+
+}
 
       .schedule-item{
         align-items:center;
@@ -101,7 +106,7 @@ border-radius: 0.8rem;
 overflow: hidden;
 padding-top: 2.4rem;
 .form-container{
-  padding: 0 2.6rem;
+  padding: 0rem;
 
 }
 `;
@@ -109,7 +114,7 @@ padding-top: 2.4rem;
 export const Footer = styled('footer')`
   background: ${(props) => props.theme.colors.input};
   margin-top: 6.4rem;
-
+  padding: 1.4rem;
   p{
     display:flex;
     align-items: center;

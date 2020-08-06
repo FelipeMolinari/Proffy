@@ -18,7 +18,7 @@ const Header: React.FC<Props> = ({ mainText, subText, toggleTheme }) => {
 				<BackButton to="/" className="back-button">
 					<IoIosArrowRoundBack size={56} color={colors.title} />
 				</BackButton>
-				<LogoMain>Proffy</LogoMain>
+				<LogoMain className="logo-main">Proffy</LogoMain>
 				<Switch
 					onChange={() => {
 						toggleTheme();

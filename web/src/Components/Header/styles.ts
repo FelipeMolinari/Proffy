@@ -6,7 +6,20 @@ export const HeaderContainer = styled('div')`
   background: transparent;
   display:flex;
   flex-direction:column;
-
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .content-header{
+      width:100vw;
+      display:flex;
+      align-items:center; 
+      span,strong{
+        width: 80%;
+      }
+    }
+    .logo-main{
+      font-size: 6rem;
+    }
+   
+  }
 `;
 
 export const TopBar = styled('header')`
@@ -16,7 +29,7 @@ export const TopBar = styled('header')`
   justify-content:center;
   padding: 2.6rem;
   width: 100vw;
-  background: ${props=>props.theme.colors.background};
+  background: ${(props) => props.theme.colors.background};
   z-index: 1;
 `;
 export const BackButton = styled(Link)`
@@ -51,7 +64,7 @@ export const HeaderContent = styled('div')`
     }
     span{
       font: 1.6rem Poppins;
-      width: 380px;
+      width: 400px;
       line-height: 2rem;
       color:${(props) => props.theme.colors.subtext}; 
       margin-top: 2.4rem;

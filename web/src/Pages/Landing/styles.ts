@@ -1,12 +1,15 @@
-import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const LandingContent = styled("div")`
-width: 100vh;
+export const LandingContent = styled('div')`
+height: 100vh;
 width: 100vw;
 display: flex;
 justify-content: center;
 align-items:center;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    padding-top: 6rem;
+  }
 @media (min-width:  700px){
 		#grid-container{
       max-width: 1100px;
@@ -62,7 +65,7 @@ align-items:center;
 }
 
 `;
-export const LogoConteiner = styled("div")`
+export const LogoConteiner = styled('div')`
 
   text-align: center;
   margin-bottom: 1.6rem;
@@ -72,7 +75,7 @@ export const LogoConteiner = styled("div")`
   align-items:center;
   .logo-main{
     font: 10rem Lobster;
-    color: ${props=>props.theme.colors.title};
+    color: ${(props) => props.theme.colors.title};
 
   }
   .logo-description{
@@ -80,16 +83,16 @@ export const LogoConteiner = styled("div")`
     font-size: 1.8rem;
     margin-top: 3rem;
     width: 30rem;
-    color: ${props=>props.theme.colors.subtext};
+    color: ${(props) => props.theme.colors.subtext};
     line-height: 2.6rem;
 
   }
 `;
 
-export const ImageIntro = styled("img")`
+export const ImageIntro = styled('img')`
   width: 80%;
-`
-export const ButtonsContainer = styled("div")`
+`;
+export const ButtonsContainer = styled('div')`
 display:flex;
 justify-content: center;
 margin: 1rem 0;
@@ -101,13 +104,13 @@ flex-direction:column;
   margin-bottom: 1rem;
 }
 .student{
-  background: ${props=>props.theme.colors.button}
+  background: ${(props) => props.theme.colors.button}
 }
 .teacher{
   background: ${(props) => props.theme.colors.primary}
 }
 .student:hover{
-  background: ${props=>props.theme.colors.buttonHover}
+  background: ${(props) => props.theme.colors.buttonHover}
 }
 .teacher:hover{
   background: ${(props) => props.theme.colors.lighter};
@@ -124,7 +127,7 @@ display: flex;
 align-items:center;
 justify-content: center;
 text-decoration: none;
-color: ${props=> props.theme.colors.background};
+color: ${(props) => props.theme.colors.background};
 padding-right: 2rem;
 
 span{
@@ -140,17 +143,15 @@ img{
 
 `;
 
-export const TotalConnections = styled("span")`
+export const TotalConnections = styled('span')`
   font-size: 1.4rem;
   display:flex;
   align-items: center;
   justify-content:center;
-  color: ${props=> props.theme.colors.subtext};
+  color: ${(props) => props.theme.colors.subtext};
   img{
     margin-left: 0.8rem;  
   }
   margin: 1.6rem 0 ;
 
 `;
-
-
