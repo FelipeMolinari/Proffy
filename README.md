@@ -29,6 +29,7 @@
 <br>
 
 <p align="center">
+
   <img alt="Frontend" src="http://g.recordit.co/QUe59UHQyR.gif" width="100%">
 </p>
 
@@ -48,6 +49,7 @@ Proffy é uma plataforma que conecta estudantes à professores.
 ## 🔖 Layout
 
 Você pode ver o layout detalhado através do figma. [desse link](https://www.figma.com/file/HEPW1PI48RI506cOBMO8kq/Untitled?node-id=3%3A6302).
+Ou se preferir, a página https://proffy-taupe-one.vercel.app (Em construção).
 
 ## 🤔 Como contribuir
 
