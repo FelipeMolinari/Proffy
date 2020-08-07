@@ -2,40 +2,48 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import { Card, CardHeader, TeacherImage, TeacherDetails, Description, Footer } from './styles';
 import { IoLogoWhatsapp } from 'react-icons/io';
+import api from '../../services/api';
 
-function TeacherList() {
+export interface PropsTeacher {
+	id: number;
+	subject: string;
+	bio: string;
+	url: string;
+	name: string;
+	cost: number;
+	whatsapp: string;
+}
+interface Teacher {
+	teacher: PropsTeacher;
+}
+const TeacherList: React.FC<Teacher> = ({ teacher }) => {
 	const { colors } = useContext(ThemeContext);
+	function createNewConnection() {
+		api.post('connections', {
+			user_id: teacher.id
+		});
+	}
 	return (
 		<Card className="card-item">
 			<CardHeader>
-				<TeacherImage
-					src="https://avatars0.githubusercontent.com/u/44385529?s=460&u=c8a1d528513e46dce6a4bb1d689155fa18b5f1d4&v=4"
-					alt="Felipe Molinari"
-				/>
+				<TeacherImage src={teacher.url} alt={teacher.name} />
 				<TeacherDetails>
-					<strong>Felipe Molinari</strong>
-					<span>Química</span>
+					<strong>{teacher.name}</strong>
+					<span>{teacher.subject}</span>
 				</TeacherDetails>
 			</CardHeader>
-			<Description>
-				Entusiasta das melhores tecnologias de quimica avançada.
-				<br /> <br />
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis dui sed leo volutpat facilisis.
-				Praesent ac mauris lobortis, tempus arcu nec, auctor diam. Nulla facilisi. Nullam ut elit a enim
-				vulputate semper. Sed mattis ac neque quis imperdiet. Nunc dui massa, sagittis vel efficitur quis,
-				luctus vel libero. Morbi vel libero nec ex convallis venenatis.
-			</Description>
+			<Description>{teacher.bio}</Description>
 			<Footer className="footer-card">
 				<p>
-					Preço/Hora <strong>R$ 80,00</strong>
+					Preço/Hora <strong>R$ {teacher.cost}</strong>
 				</p>
 
-				<button type="button">
+				<a onClick={() => createNewConnection()} href={`https://wa.me/${teacher.whatsapp}`}>
 					<IoLogoWhatsapp size={26} color={colors.input} />
 					<span>Entrar em contato</span>
-				</button>
+				</a>
 			</Footer>
 		</Card>
 	);
-}
+};
 export default TeacherList;

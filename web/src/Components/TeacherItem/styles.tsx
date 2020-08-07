@@ -66,13 +66,14 @@ p strong{
   display:block;
 }
 
-button{
+a{
   width: 20rem;
   height: 5.6rem;
   background: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.input};
   border: 0;
   border-radius: 0.8rem;
+  text-decoration:none;
   cursor: pointer;
   font: 700 1.4rem Archivo;
   display: flex;
