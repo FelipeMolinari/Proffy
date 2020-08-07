@@ -8,7 +8,7 @@ export const Label = styled('label')`
 export const InputBlock = styled('div')`
 position:relative;
 width: 80%;
-  &:focus-within::after{
+  & .input-camp:focus-within::after{
     width: calc(100%-3.2rem);
     height: 3px;
     content: "";

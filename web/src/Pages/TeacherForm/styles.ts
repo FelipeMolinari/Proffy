@@ -33,14 +33,15 @@ export const TeacherListContent = styled('div')`
         }
       }
       .form-container{
-  padding:  0rem 2.6rem;
+         padding:  0rem 2.6rem;
 
-}
+      }
 
-      .schedule-item{
+      div .schedule-item{
         align-items:center;
         display:grid;
         grid-template-columns: 2fr 1fr 1fr 0.1fr;
+        
         column-gap: 1.6rem;
         
         .input-block{
@@ -49,6 +50,14 @@ export const TeacherListContent = styled('div')`
         svg{
           margin-top: 3.4rem;
         }
+      }
+      div .schedule-item-errors{
+        align-items:center;
+        display:grid;
+        grid-template-columns: 2fr 1fr 1fr 0.1fr;
+        
+        column-gap: 1.6rem;
+        margin-bottom: 1.4rem;
       }
       
   }}
